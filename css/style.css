@@ -1,0 +1,263 @@
+@font-face {
+	font-family: 'Tilda-Light'; 
+	src: url(../font/tilda-sans_light.ttf); 
+}
+@font-face {
+	font-family: 'Tilda-Medium'; 
+	src: url(../font/tilda-sans_medium.ttf); 
+}
+@font-face {
+	font-family: 'Tilda-Bold'; 
+	src: url(../font/tilda-sans_bold.ttf); 
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(254, 254, 254);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    background-image: linear-gradient(rgba(0, 132, 255, 0.555), rgba(0, 132, 255, 0.555)), url(../img/background.jpg);
+    background-position: top;
+    background-repeat: repeat, no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav-menu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.menu-item{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 20px 20px;
+    font-size: 16px;
+    font-family: Tilda-Bold;
+}
+.nav-item{
+    color: white;
+    padding: 20px 20px;
+    font-size: 16px;
+    font-family: Tilda-Bold;
+}
+.nav-item:hover{
+    color: rgb(199, 199, 199);
+    transition: 0.2s;
+}
+.menu-line{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+.phone{
+    margin-left: 20px;
+}
+.phone img{
+    width: 35px;
+}
+.zagolovok{
+    padding: 15% 0%;
+    text-align: center;
+    color: white;
+    font-family: Tilda-Light;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.h1{
+    font-size: 3.5rem;
+    font-family: Tilda-Bold;
+}
+.podzag{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.zag-button{
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    border: 2px solid white;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+.zag-button:hover{
+    color: rgba(0, 132, 255, 1);
+    border: 2px solid transparent;
+    background-color: white;
+}
+.container1{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+}
+.service{
+    display: flex;
+    flex-direction: column; 
+    width: 60%;
+    align-items: center;
+
+}
+.service-item{
+    width: 100%;
+    display: flex;
+    padding: 50px 0px;
+    justify-content: space-between;
+}
+.service-it{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: Tilda-Light;
+    color: rgb(63, 63, 63);
+}
+.service-it img{
+    width: 50px;
+}
+.h2{
+    font-size: 2.5rem;
+    font-family: Tilda-Bold;
+    color: rgb(63, 63, 63);
+    text-align: center;
+}
+.service-ite img{
+    width: 35px;
+    margin-right: 20px;
+}
+.service-ite{
+    display: flex;
+    font-size: 1.3rem;
+    font-family: Tilda-Light;
+    color: rgb(63, 63, 63);
+    padding: 10px 0px;
+}
+.tab{
+    width: 100%;
+}
+.h3{
+    font-size: 1.5rem;
+    font-family: Tilda-Bold;
+    color: rgb(63, 63, 63);
+    text-align: center;
+    padding: 20px 0px;
+}
+.grid1{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+    padding: 50px 0px;
+}
+.nomer-item{
+    display: flex;
+    flex-direction: column;
+    font-family: Tilda-Light;
+    color: rgb(63, 63, 63);
+    font-size: 1.2rem;
+    text-align: center;
+    align-items: center;  
+    background-color: white;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.2s;
+    border: 1px solid rgb(202, 202, 202);
+    margin-top: 30px;
+}
+.nomer{
+    width: 60%;
+}
+.n-item-text{
+    padding: 10px 20px;
+}
+.n-img img{
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px 10px 0 0;
+}
+.n-button{
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 132, 255, 1);
+    color: rgba(0, 132, 255, 1);
+    background-color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.n-button:hover{
+    color: rgb(255, 255, 255);
+    border: 1px solid transparent;
+    background-color: rgba(0, 132, 255, 1);
+}
+.about-text p{
+    font-family: Tilda-Light;
+    font-size: 1.5rem;
+}
+.about-text{
+    text-align: center;
+}
+.usl-text p{
+    font-family: Tilda-Light;
+    font-size: 1.3rem;
+}
+.usl{
+    color: white;
+    width: 60%;
+    padding: 30px 0px;
+    text-align: center;
+}
+.w{
+    font-size: 2.5rem;
+    font-family: Tilda-Bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.b{
+    font-family: Tilda-Bold;
+}
+.contact{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+.contact-item{
+    width: 45%;
+    font-family: Tilda-Light;
+    font-size: 1.3rem;
+    height: 500px;
+}
+.footer{
+    width: 100%;
+    border-top: 1px solid rgb(199, 199, 199);
+    padding: 5px 0px;
+    display: flex;
+    justify-content: space-around;
+    font-family: Tilda-Light;
+    color: rgb(71, 71, 71);
+}
+.map{
+    width: 100%;
+    height: 100%;
+}
