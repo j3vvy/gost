@@ -12,11 +12,18 @@
 }
 html{
     scroll-behavior: smooth;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently*/
 }
 body{
     padding: 0;
     margin: 0;
     background-color: rgb(254, 254, 254);
+    font-family: Tilda-Light;
 }
 a{
     text-decoration: none;
@@ -42,7 +49,7 @@ a{
     display: flex;
     align-items: center;
     color: white;
-    padding: 20px 20px;
+    padding: 0px 20px;
     font-size: 16px;
     font-family: Tilda-Bold;
 }
@@ -260,4 +267,276 @@ a{
 .map{
     width: 100%;
     height: 100%;
+}
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);  
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 2;
+    visibility: hidden;
+    transition: 0.2s;
+}
+.popup-body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+.popup-area {
+    font-size: 50px;
+    font-family: Tilda-Light;
+    color: rgb(71, 71, 71);
+    margin-left: 100%;
+}
+.popup-content {
+    background-image: url(../img/quiz-mobile.png);
+    background-size: 100% 100%;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+.swiper{
+    width: 100%;
+  }
+  .swiper-slide{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-slide img{
+    max-width: 58%;
+    object-fit: cover;
+  }
+  .swiper-wrapper{
+    align-items: center;
+  }
+
+
+  .popup1 {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);  
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 2;
+    visibility: hidden;
+}
+.popup-body1 {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+.popup1:target {
+    opacity: 1;
+    visibility: visible;
+}
+.popup-area1 {
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    top: 0;
+    left: 0;
+}
+.popup-content1 {
+    background-image: url(../img/quiz-mobile.png);
+    background-size: 100% 100%;
+    background-color: rgb(253, 253, 253);;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    padding: 50px 0px;
+}
+.popup-close {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.pop-form{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+}
+.p-1{
+   width: 80%; 
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+
+}
+.popup-form{
+    padding: 0px 50px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.pop-1{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+.pop-h1{
+    font-size: 2.3rem;
+    color: rgb(58, 58, 58);
+    padding: 0px 0px 20px 0px;
+}
+.pop-text{
+    color: white;
+}
+.input-sell{
+    height: 50px;
+    border-radius: 25px;
+    padding: 0px 20px; 
+    background-color:rgb(255, 255, 255);;
+    border: 1px solid rgba(0, 132, 255, 1);; 
+    font-size: 1.1rem;
+    color: rgba(0, 132, 255, 1);
+    margin-bottom: 20px;
+}
+.select-sell{
+    height: 50px;
+    border-radius: 25px;
+    padding: 0px 20px; 
+    border: 1px solid rgba(0, 132, 255, 1);;
+    background-color:rgb(255, 255, 255);;
+    color: rgba(0, 132, 255, 1);;
+    font-size: 1.1rem;
+    font-family: Tilda-Light;
+    margin-bottom: 20px;
+}
+input::placeholder{
+    font-family: Tilda-Light;
+    font-size: 1.1rem;
+    color: rgba(0, 132, 255, 1);;
+}
+.sell-button{
+    width: 350px;
+    height: 50px;
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
+    border: 1px solid transparent;
+    background-color: rgba(0, 132, 255, 1);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    cursor: pointer;
+    font-family: Tilda-Light;
+}
+.sell-button:hover{
+    border: 1px solid rgba(0, 132, 255, 1);
+    color: rgba(0, 132, 255, 1);
+    background-color: transparent;
+}
+.sell-label{
+    font-size: 1.1rem;
+}
+@media screen and (max-width: 1280px){
+    .menu-line{
+        width: 95% !important;
+    }
+    .grid1{
+        grid-template-columns: 45% 45% !important; 
+    }
+    .nomer {
+        width: 95% !important;
+    }
+    .service {
+        width: 95% !important;
+    }
+    .about {
+        width: 95% !important;
+    }
+    .zagolovok {
+        width: 95% !important;
+    }
+    .usl{
+        width: 95% !important;
+    }
+    .contact{
+        width: 95% !important;
+    }
+}
+@media screen and (max-width: 680px){
+    .none{
+        display: none !important;
+    }
+    .h1{
+        font-size: 2rem;
+    }
+    .podzag{
+        font-size: 1.2rem;
+    }
+    .h2{
+        font-size: 1.7rem;
+    }
+    .service-it p{
+        font-size: 1.2rem;
+    }
+    .service-item {
+        flex-direction: column !important;
+        align-items: center;
+    }
+    .service-ite{
+        flex-direction: column !important;
+        align-items: center !important;       
+    }
+    .service-ite img{
+        margin: 0;
+    }
+    .h3{
+        font-size: 1.3rem;
+    }
+    .about-text p{
+        font-size: 1.2rem;
+    }
+    .grid1{
+        grid-template-columns: 90% !important;
+        justify-content: center !important; 
+    }
+    .w{
+        font-size: 1.4rem;
+    }
+    .usl p{
+        font-size: 1.1rem;
+    }
+    .contact{
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .contact-item{
+        width: 95% !important;
+        text-align: center;
+        height: auto !important;
+    }
+    .map{
+        height: 400px !important;
+        margin-bottom: 20px !important;
+    }
 }
