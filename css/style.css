@@ -457,6 +457,9 @@ input::placeholder{
 .sell-label{
     font-size: 1.1rem;
 }
+.yes {
+    display: none;
+}
 @media screen and (max-width: 1280px){
     .menu-line{
         width: 95% !important;
@@ -538,5 +541,17 @@ input::placeholder{
     .map{
         height: 400px !important;
         margin-bottom: 20px !important;
+    }
+    .swiper-slide img{
+    max-width: 100% !important;
+    }
+    .popup-content{
+        width: 90% !important;
+    }
+    .popup-content1{
+        width: 98% !important;
+    }
+    .yes{
+        display: block !important;
     }
 }
